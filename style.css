@@ -18,7 +18,7 @@
     grid-row-start: span 2;
     padding: 10px 15px;
     display: grid;
-    grid-template-rows: 3rem 8rem 3rem;
+    grid-template-rows: 2rem 8rem 3rem;
     
   }
   
@@ -26,15 +26,18 @@
     background-color: rgb(226,232,240);
     color: black;
     display: grid;
-    grid-template-columns: 2fr 1fr;
-      padding: 10px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 2rem 1fr 2rem 1fr;
+    padding: 10px;
+    gap:10px;
   }
   
   .projects {
-    grid-row-start: span 2;
+    grid-row-start: 2;
+    grid-row-end: 5;
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   }
   
   
@@ -56,23 +59,35 @@
   
   .card {
     background-color: white;
-    height: 100px;
-    width: 100px;
     border-radius: 6px;
-    box-shadow: 4px 0px orange inset;
+    box-shadow: 4px 0px orange inset, 3px 3px 3px rgba(0, 0, 0, 7%);
+    padding: 15px;
+    }
+
+  .card :nth-child(1) {
+    font-weight: bolder;
+    font-size: .75rem;
   }
-  
+
+  .card :nth-child(2) {
+    font-size: .5rem;
+  }
+
   .main-heading {
-    grid-column-start: 1;
-    grid-column-end: -1;
-    
+    /* grid-column-start: 1;
+    grid-column-end: -1; */
   }
   
   .main-sub {
     padding-left: 15px;
-  
+    
   }
-  
+
+  .main-sub :nth-child(1) {
+    padding-bottom: 15px;
+    
+  }
+
   .corner-profile {
     justify-self: right;
     padding-right: 15px;
@@ -112,8 +127,20 @@ a {
 
 .announcements {
   background-color: white;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 7%);
+  border-radius: 6px; 
+  grid-row-start: 2;
+  grid-row-end: 3;
+  padding: 15px;
 }
 
 .trending {
   background-color: white;
+  padding: 15px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 7%);
+  border-radius: 6px;
+}
+
+.main-content-heading {
+ align-self: center;
 }
