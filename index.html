@@ -9,20 +9,28 @@
 <body>
     <div class="container">
         <div class="sidebar">
-          <p>Dashboard</p>
-          <ul>
-            <li>Home</li>
-            <li>Profile</li>
-            <li>Messages</li>
-            <li>History</li>
-            <li>Tasks</li>
-            <li>Communities</li>
-          </ul>
-          <ul>
-            <li>Setting</li>
-            <li>Support</li>
-            <li>Privacy</li>
-          </ul>
+          <div>
+            <p><a href="#">Dashboard</a></p>
+          </div>
+
+          <div>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Profile</a></li>
+              <li><a href="#">Messages</a></li>
+              <li><a href="#">History</a></li>
+              <li><a href="#">Tasks</a></li>
+              <li><a href="#">Communities</a></li>
+            </ul>
+          </div>
+          
+          <div>
+            <ul>
+              <li><a href="#">Setting</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Privacy</a></li>
+            </ul>
+          </div>
           
         </div>
         <div class="header">
@@ -34,8 +42,8 @@
           </div>
           <ul class="link-list">
             <li class="link-button"><a href="#">News</a></li>
-            <li class="link-button">Upload</li>
-            <li class="link-button">Share</li>
+            <li class="link-button"><a href="#">Upload</a></li>
+            <li class="link-button"><a href="#">Share</a></li>
           </ul>
         </div>
       
@@ -55,8 +63,15 @@
             <div class="card">
             </div>
           </div>
-          <p class="main-sub">Announcements</p>
-          <p class="main-sub">Trending</p>
+          <div class="main-sub">
+            <p>Announcements</p>
+            <div class="announcements"></div>
+          </div>
+          
+          <div class="main-sub">
+            <p>Trending</p>
+            <div class="trending"></div>
+          </div>
           
         </div>
       </div>      

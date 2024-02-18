@@ -17,6 +17,8 @@
   .sidebar {
     grid-row-start: span 2;
     padding: 10px 15px;
+    display: grid;
+    grid-template-rows: 3rem 8rem 3rem;
     
   }
   
@@ -57,7 +59,7 @@
     height: 100px;
     width: 100px;
     border-radius: 6px;
-    box-shadow: 4px 0px lightblue inset;
+    box-shadow: 4px 0px orange inset;
   }
   
   .main-heading {
@@ -67,7 +69,8 @@
   }
   
   .main-sub {
-    grid-column-start: span 1;
+    padding-left: 15px;
+  
   }
   
   .corner-profile {
@@ -98,6 +101,19 @@
     align-self: end;
 }
 
-.sidebar li:hover {
+/* .sidebar li:hover {
     background-color: rgb(16, 79, 112);
+} */
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.announcements {
+  background-color: white;
+}
+
+.trending {
+  background-color: white;
 }
