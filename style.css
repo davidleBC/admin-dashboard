@@ -31,14 +31,22 @@
     height: 1rem;
     width: 1rem;
     align-self: center;
+    display: inline;
   }
 
+
   .icon1 {
+    display: grid;
+    grid-template-columns: 1rem 1rem 1rem;
+    justify-self: end;
+  }
+
+  .icon3 {
     height: 1rem;
     width: 1rem;
-    justify-self: end;
-    align-self: end;
+
   }
+
 
   .sidebar p {
     padding-left: 10px;
@@ -86,7 +94,7 @@
     box-shadow: 4px 0px orange inset, 3px 3px 3px rgba(0, 0, 0, 7%);
     padding: 10px;
     display: grid;
-    grid-template-rows: 1rem 2rem 1fr;
+    grid-template-rows: 1rem 1fr 1rem;
     }
 
 
